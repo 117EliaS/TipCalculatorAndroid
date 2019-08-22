@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="title"><u><b>____Tip Calculator____</b></u></string>
+    <string name="buttonText"><i>Calculate Manual Total</i></string>
+    <string name="buttonText10"><i>Calculate 10%Tip Total</i></string>
+    <string name="buttonText15"><i>Calculate 15%Tip Total</i></string>
+    <string name="buttonText20"><i>Calculate 20%Tip Total</i></string>
+    <string name="subtotalText"><b>Bill Subtotal:</b></string>
+    <string name="tipText"><b>Tip%:</b></string>
+    <string name="buttonSubmit"><i>Submit</i></string>
+    <string name="reviewSubmit"><i>Leave a Rating:</i></string>
+    <string name="reviewFirst"><i>Thank you for your feedback!</i></string>
+    <string name="reviewSecond"><i>You already rated...</i></string>
+</resources>

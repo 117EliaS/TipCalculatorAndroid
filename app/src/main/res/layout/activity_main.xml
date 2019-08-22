@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:padding="@dimen/padding">
+
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="@string/title"
+
+
+
+        android:textSize="16pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotalText"
+        android:textSize="16pt"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipText"
+
+        android:layout_marginBottom="0.25in"
+
+        android:textSize="16pt"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/totalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0.120in"
+
+        android:text="Total Tip:  "
+        android:textSize="16pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/totalTipNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=""
+
+        android:layout_marginTop="0.120in"
+
+        android:textSize="16pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/rateMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reviewSubmit"
+        android:layout_marginTop="0.120in"
+        android:textSize="8pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/rateMeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reviewFirst"
+        android:layout_marginTop="0.120in"
+        android:textSize="8pt"
+
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/rateMeEnd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reviewSecond"
+        android:layout_marginTop="0.120in"
+        android:textSize="8pt"
+
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: "
+        android:textSize="16pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/totalNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:id="@+id/subtotal"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="right"
+
+        android:hint="subtotal"
+        android:inputType="number"
+        android:password="false"
+        android:textAllCaps="false"
+        android:typeface="normal"
+        tools:visibility="visible" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/tip"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:layout_gravity="right"
+        android:hint="tip%"
+
+        tools:visibility="visible"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+    <!-- comment
+    /background color change found here:
+    /https://stackoverflow.com/questions/32671004/how-to-change-the-color-of-a-button
+    -->
+
+    <Button
+    android:id="@+id/button10"
+    android:layout_width="133dp"
+    android:layout_height="65dp"
+    android:layout_row="3"
+    android:layout_column="0"
+    android:layout_marginRight="0.25in"
+    android:layout_gravity="right"
+    android:onClick="calculateTip10"
+    android:text="@string/buttonText10"
+    android:textColor="@color/colorPrimaryDark" android:background="@color/backgroundButton"/>
+
+    <Button
+        android:id="@+id/buttonRate"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_gravity="right"
+
+        android:onClick="submitReview"
+        android:text="@string/buttonSubmit"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/backgroundButton"/>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="133dp"
+        android:layout_height="65dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_marginLeft="0.25in"
+        android:onClick="calculateTip15"
+        android:text="@string/buttonText15"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/backgroundButton"/>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="133dp"
+        android:layout_height="65dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_marginRight="0.25in"
+        android:layout_gravity="right"
+        android:onClick="calculateTip20"
+        android:text="@string/buttonText20"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/backgroundButton"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="65dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginLeft="0.25in"
+        android:layout_marginBottom="15px"
+        android:layout_gravity="left"
+        android:onClick="calculateTip"
+        android:text="@string/buttonText"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/backgroundButton"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_row="8"
+        android:layout_column="0" />
+
+
+</GridLayout>
