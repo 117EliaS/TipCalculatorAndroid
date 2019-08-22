@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int rated = 0;
 
+    private int useless = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
