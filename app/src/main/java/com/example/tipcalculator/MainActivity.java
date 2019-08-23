@@ -21,107 +21,214 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculateTip(View v){
 
+        try {
+
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
+            EditText tip = (EditText) findViewById(R.id.tip);
+            TextView total = (TextView) findViewById(R.id.totalNum);
+
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
+            double tipDbl = Double.parseDouble(tip.getText().toString());
+
+            tipDbl = tipDbl / 100;
+
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+
+            String totalPriceString = String.format("%.2f", totalPrice);
+
+            total.setText("$" + totalPriceString);
+
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
 
 
-        //get references to all elements on app screen
-        EditText subtotal = (EditText) findViewById(R.id.subtotal);
-        EditText tip = (EditText) findViewById(R.id.tip);
-        TextView total = (TextView) findViewById(R.id.totalNum);
+        }
 
-        TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+        catch(Exception e){
 
-        //get the values from the EditText boxes and convert them to int data types
-        double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
-        double tipDbl = Double.parseDouble(tip.getText().toString());
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
+            EditText tip = (EditText) findViewById(R.id.tip);
+            TextView total = (TextView) findViewById(R.id.totalNum);
 
-        tipDbl = tipDbl/100;
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
 
-        double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = 0;
+            double tipDbl = 0;
 
-        String totalPriceString = String.format("%.2f", totalPrice);
+            tipDbl = tipDbl / 100;
 
-        total.setText("$" + totalPriceString);
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
 
-        totalTip.setText("$" + (subtotalDbl * tipDbl));
+            String totalPriceString = String.format("%.2f", totalPrice);
 
+            total.setText("$" + totalPriceString);
+
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
+
+        }
     }
 
     public void calculateTip10(View v){
 
+        try {
 
-        //get references to all elements on app screen
-        EditText subtotal = (EditText) findViewById(R.id.subtotal);
 
-        TextView total = (TextView) findViewById(R.id.totalNum);
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
 
-        TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+            TextView total = (TextView) findViewById(R.id.totalNum);
 
-        //get the values from the EditText boxes and convert them to int data types
-        double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
-        double tipDbl = 10;
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
 
-        tipDbl = tipDbl/100;
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
+            double tipDbl = 10;
 
-        double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+            tipDbl = tipDbl / 100;
 
-        String totalPriceString = String.format("%.2f", totalPrice);
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
 
-        total.setText("$" + totalPriceString);
+            String totalPriceString = String.format("%.2f", totalPrice);
 
-        totalTip.setText("$" + (subtotalDbl * tipDbl));
+            total.setText("$" + totalPriceString);
 
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
+
+        }
+        catch(Exception e){
+
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
+
+            TextView total = (TextView) findViewById(R.id.totalNum);
+
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = 0;
+            double tipDbl = 10;
+
+            tipDbl = tipDbl/100;
+
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+
+            String totalPriceString = String.format("%.2f", totalPrice);
+
+            total.setText("$" + totalPriceString);
+
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
+
+        }
     }
 
     public void calculateTip15(View v){
 
+        try {
 
-        //get references to all elements on app screen
-        EditText subtotal = (EditText) findViewById(R.id.subtotal);
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
 
-        TextView total = (TextView) findViewById(R.id.totalNum);
+            TextView total = (TextView) findViewById(R.id.totalNum);
 
-        TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
 
-        //get the values from the EditText boxes and convert them to int data types
-        double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
-        double tipDbl = 15;
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
+            double tipDbl = 15;
 
-        tipDbl = tipDbl/100;
+            tipDbl = tipDbl / 100;
 
-        double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
 
-        String totalPriceString = String.format("%.2f", totalPrice);
+            String totalPriceString = String.format("%.2f", totalPrice);
 
-        total.setText("$" + totalPriceString);
+            total.setText("$" + totalPriceString);
 
-        totalTip.setText("$" + (subtotalDbl * tipDbl));
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
 
+        }
+        catch(Exception e){
+
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
+
+            TextView total = (TextView) findViewById(R.id.totalNum);
+
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = 0;
+            double tipDbl = 15;
+
+            tipDbl = tipDbl/100;
+
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+
+            String totalPriceString = String.format("%.2f", totalPrice);
+
+            total.setText("$" + totalPriceString);
+
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
+        }
     }
 
     public void calculateTip20(View v){
 
+        try {
 
-        //get references to all elements on app screen
-        EditText subtotal = (EditText) findViewById(R.id.subtotal);
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
 
-        TextView total = (TextView) findViewById(R.id.totalNum);
+            TextView total = (TextView) findViewById(R.id.totalNum);
 
-        TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
 
-        //get the values from the EditText boxes and convert them to int data types
-        double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
-        double tipDbl = 20;
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = Double.parseDouble(subtotal.getText().toString());
+            double tipDbl = 20;
 
-        tipDbl = tipDbl/100;
+            tipDbl = tipDbl / 100;
 
-        double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
 
-        String totalPriceString = String.format("%.2f", totalPrice);
+            String totalPriceString = String.format("%.2f", totalPrice);
 
-        total.setText("$" + totalPriceString);
+            total.setText("$" + totalPriceString);
 
-        totalTip.setText("$" + (subtotalDbl * tipDbl));
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
 
+        }
+
+        catch(Exception e){
+
+            //get references to all elements on app screen
+            EditText subtotal = (EditText) findViewById(R.id.subtotal);
+
+            TextView total = (TextView) findViewById(R.id.totalNum);
+
+            TextView totalTip = (TextView) findViewById(R.id.totalTipNum);
+
+            //get the values from the EditText boxes and convert them to int data types
+            double subtotalDbl = 0;
+            double tipDbl = 20;
+
+            tipDbl = tipDbl/100;
+
+            double totalPrice = subtotalDbl + (subtotalDbl * tipDbl);
+
+            String totalPriceString = String.format("%.2f", totalPrice);
+
+            total.setText("$" + totalPriceString);
+
+            totalTip.setText("$" + (subtotalDbl * tipDbl));
+
+
+        }
     }
 
     public void submitReview(View v){

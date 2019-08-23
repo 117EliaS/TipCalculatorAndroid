@@ -86,6 +86,9 @@
 
         android:layout_marginTop="0.120in"
 
+        android:maxWidth="1in"
+        android:maxHeight="0.25in"
+
         android:textSize="16pt"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -174,6 +177,9 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="16pt"
+
+        android:maxWidth="1in"
+        android:maxHeight="0.25in"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
